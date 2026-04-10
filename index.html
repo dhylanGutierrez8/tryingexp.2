@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina de Experimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <h1>TRYINGEXP</h1>
+        <p>Aprende ciencia facil en tu casa</p>
+    </center>
+
+    <div id="menu">
+        <div class="opcion">
+            <h3>Volcan de Vinagre</h3>
+            <button onclick="mostrarVolcan()">Ver como se hace</button>
+        </div>
+
+        <div class="opcion">
+            <h3>Fluido Raro</h3>
+            <button onclick="mostrarFluido()">Ver como se hace</button>
+        </div>
+
+        <div class="opcion">
+            <h3>Lampara de Lava</h3>
+            <button onclick="mostrarLampara()">Ver como se hace</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="detalle-experimento" style="display:none; border: 1px solid black; padding: 20px;">
+        <h2 id="titulo-exp"></h2>
+        <ul id="lista-pasos"></ul>
+        <button onclick="cerrar()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
